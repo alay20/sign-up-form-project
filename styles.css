@@ -1,0 +1,68 @@
+@font-face {
+    font-family: norse-bold;
+    src: url(Norse-Bold.otf)
+}
+
+body {
+    display: flex;
+}
+
+.left-container {
+    font-family: norse-bold, sans-serif;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    background-image: url("josh-withers-bMuWctgg1a8-unsplash.jpg");
+    background-size: cover;
+    width: 35vw;
+    height: 100vh;
+    
+    align-items: center;
+}
+
+.logo-bg {
+    display: flex;
+    background: rgb(0, 0, 0, 0.3);
+    width: 100%;
+    height: 6rem;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 15rem;
+}
+
+
+.logo {
+    height: 100%;
+}
+
+.logo-name {
+    align-self: center;
+    font-size: 5rem;
+}
+
+.photo-credit {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
+    margin-top: auto;
+    margin-bottom: 1rem;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 100px 50px 0 50px;  
+    height: 100%;
+}
+
+.intro {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+}
+
+
+
+
