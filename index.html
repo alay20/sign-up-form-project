@@ -24,37 +24,40 @@
     <div class="right-container">
         <p class="intro">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br> Sign up <i>now</i> to get started. <br><br>You <i>know</i> you want to.</p>
     
-        <form>
+        <form class="user-form">
+            <div class="user-input">
             <h3>Let's do this!</h3>
-            <section>
+            <section class="input-grid">
                 <p>
-                    <label for="first-name">FIRST NAME</label>
-                    <input type="text" id="first-name" name="first-name">
+                    <label for="first-name">FIRST NAME*</label>
+                    <input type="text" id="first-name" name="first-name" required placeholder="Required">
                 </p>
                 <p>
-                    <label for="last-name">LAST NAME</label>
-                    <input type="text" id="last-name" name="last-name">
+                    <label for="last-name">LAST NAME*</label>
+                    <input type="text" id="last-name" name="last-name" required placeholder="Required">
                 </p>
                 <p>
                     <label for="email">EMAIL</label>
-                    <input type="email" id="email" name="email" >
+                    <input type="email" id="email" name="email">
                 </p>
                 <p>
                     <label for="phone">PHONE NUMBER</label>
-                    <input type="tel" id="phone" name="phone">
+                    <input type="tel" id="phone" name="phone" placeholder="###-###-####" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                 </p>
 
                 <p>
-                    <label for="password">PASSWORD</label>
-                    <input type="password" id="password" name="password">
+                    <label for="password1">PASSWORD*</label>
+                    <input type="password" id="password1" name="password1" minlength="8" maxlength="16" required>
                 </p>
 
                 <p>
-                    <label for="password">CONFIRM PASSWORD</label>
-                    <input type="password" id="password" name="password">
+                    <label for="password2">CONFIRM PASSWORD*</label>
+                    <input type="password" id="password2" name="password2" minlength="8" maxlength="16" required>
+                    <div class="error"></div>
                 </p>
             </section>
-
+            </div>
+            
             <section>
                 <p>
                     <button type="submit">Create Account</button>
@@ -63,11 +66,12 @@
 
             <p class="log-in">Already have an account? <a href="file:///home/arthurlay/Documents/Coding/repos/sign-up-form-project/index.html">Log in</a></p>
 
-        </form>
-        
-        
+            </form>
 
+            
 
     </div>
+
+    <script src="./main.js"></script>
 </body>
 </html>
